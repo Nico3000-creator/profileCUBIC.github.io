@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blu: hsl(216, 50%, 16%);
+    --Very-dark-bl: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--Very-dark-blu);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.card_component {
+    background-color: var(--Very-dark-bl);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 73vh;
+    width: 360px;
+    margin: 5% auto; /* Agregar margen automático para centrar horizontalmente */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 30px  var(--Very-dark-blue);
+    
+}
+
+.imagen .cubo {
+    display: flex;
+    justify-content: center;
+    width: 310px;
+    border-radius: 10px;
+}
+
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card_title {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 10px;
+    color: var(--White);
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.card_title:hover {
+    color: var(--Cyan);
+}
+
+.card_text {
+    display: flex;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 400;
+    padding: 10px;
+    color: var(--Soft-blue);
+}
+
+.card_balance {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.card_balance h3 { 
+    margin-right: 120px;
+    font-size: 17px;
+}
+
+.card_balance .et {
+    display: flex;
+    align-items: center;
+}
+
+.card_balance .days {
+    display: flex;
+    align-items: center;
+}
+
+.card_balance p {
+    font-weight: 700;
+    color: var(--Soft-blue);
+    font-size: 12px;
+}
+
+#foto {
+    margin-right: 10px;
+    width: 13px;
+}
+
+.line {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--Soft-blue);
+}
+
+.end_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    color: var(--Soft-blue);
+}
+
+.avatar {
+    width: 40px;
+    display: inline-block;
+    box-shadow: inset 0 0 80px white;
+    border-radius: 19px;
+}
+
+.card_creation {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+span {
+    color: var(--Cyan);
+}
